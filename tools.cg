@@ -54,6 +54,13 @@ float4 cb_color_convert(float4 color)
 
     return correction;
 }
+
+void cb_cc_fp(
+    float4 color       : COLOR,
+    out float4 oColor  : COLOR)
+{
+    oColor = cb_color_convert(color);
+}
 // LICENSE: <end>
 
 // ----------------------------------------------------------------------
