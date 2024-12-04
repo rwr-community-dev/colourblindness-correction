@@ -123,7 +123,7 @@ void soldier_skin_ghost_fp(
     float4 color              : COLOR,
     out float4 result         : COLOR)
 {
-    result = color;
+    result = cb_color_convert(color);
 }
 
 
